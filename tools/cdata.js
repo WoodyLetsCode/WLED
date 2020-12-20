@@ -188,6 +188,22 @@ writeChunks(
   "wled00/data",
   [
     {
+      file: "index.css",
+      name: "PAGE_indexCss",
+      prepend: "=====(<style>",
+      append: "</style>)=====",
+      method: "plaintext",
+      filter: "css-minify",
+    },
+    {
+      file: "index.js",
+      name: "PAGE_indexJs",
+      prepend: "=====(<script>",
+      append: "</script>)=====",
+      method: "plaintext",
+      filter: "js-minify",
+    },
+    {
       file: "style.css",
       name: "PAGE_settingsCss",
       prepend: "=====(<style>",
